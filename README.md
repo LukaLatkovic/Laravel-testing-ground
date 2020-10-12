@@ -16,3 +16,9 @@ composer create-project --prefer-dist laravel/laravel Laravel8
 ### Routing (For learning how routes work)
 [Commit]
 
+### Controllers
+To create new controller:
+```php
+php artisan make:controller HomeController
+```
+[Commit]
