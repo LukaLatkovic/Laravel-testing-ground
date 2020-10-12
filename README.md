@@ -22,3 +22,8 @@ To create new controller:
 php artisan make:controller HomeController
 ```
 [Commit]
+
+### Views
+Views are made by making new file with extesion .blade.php 
+
+[Commit]
