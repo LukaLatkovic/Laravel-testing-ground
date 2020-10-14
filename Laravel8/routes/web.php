@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\ClientController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -31,3 +33,11 @@ Route::get('/home', [HomeController::class, 'index'])->name('home.index');
 
 // A way to get user view with controller
 Route::get('/user',[UserController::class, 'index'])->name('user.index');
+
+//Http
+
+Route::get('/posts',[ClientController::class,'getAllPost'])->name('posts.getallpost');
+Route::get('/posts/{id}', [ClientController::class,'getPostById'])->name('posts.getpostbyid');
+Route::get('/add-post', [ClientController::class,'addPost'])->name('posts.addpost');
+Route::get('/update-post', [ClientController::class,'updatePost'])->name('posts.updatepost');
+Route::get('/delete-post{id}', [ClientController::class,'deletePost'])->name('posts.deletepost');
