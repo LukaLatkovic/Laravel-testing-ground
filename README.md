@@ -3,12 +3,13 @@ This repository is simply for testing purposes of various functions and librarie
 If you need this repository you can fork it anytime, and full documentation what has been doing here will be in this ReadMe file.
 
 ## Contents
- 1. [Routing (For learning how routes work)](#routing-(for-learning-how-routes-work))
+ 1. [Routing (For learning how routes work)](#routing-for-learning-how-routes-work)
  2. [Controllers](#controllers)
  3. [Views](#views)
  4. [Blade components](#blade-components)
  5. [HTTP Client](#http-client)
  6. [Fluent Strings](#fluent-strings) 
+ 7. [Stub customisation](#stub-customisation)
 
 ### Laravel installation
 For new installation of Laravel project:
@@ -63,5 +64,14 @@ In this case [JsonPlaceHolder](https://jsonplaceholder.typicode.com/) was used f
 ### Fluent Strings
 Fluent string is a type of helpers in Php and Laravel framework
 Fluent strings provide a more fluent, object-oriented interface for working with string values, allowing you to chain multiple string operations together using a more readable syntax compared to traditional string operations.
-[Commit]  
+[Commit](https://github.com/LukaLatkovic/Laravel-testing-ground/commit/e65e46c4f15807ea34cad9e5e1c7d63d840f26f1)  
 [See more in documentation](https://laravel.com/docs/8.x/helpers#method-fluent-str-after)
+---
+
+### Stub customisation
+The Artisan console's make commands are used to create a variety of classes, such as controllers, jobs, migrations, and tests. These classes are generated using "stub" files that are populated with values based on your input.  
+```php
+php artisan stub:publish
+```  
+[Commit]  
+[See more in documentation](https://laravel.com/docs/8.x/artisan#stub-customization) 
