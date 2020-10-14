@@ -39,5 +39,11 @@ Components and slots provide similar benefits to sections and layouts.
 ```php
 php artisan make:component Alert
 ```
-[Commit]
+[Commit]  
 [See more](https://laravel.com/docs/8.x/blade#components)
+
+### HTTP Client
+For fetching data from some web app or web page. 
+In this case [Link](https://jsonplaceholder.typicode.com/) was used for fetching fake data.
+[Commit]  
+[See more](https://laravel.com/docs/8.x/http-client#making-requests)
